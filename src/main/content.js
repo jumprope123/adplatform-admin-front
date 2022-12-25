@@ -20,6 +20,7 @@ const Content = (props) =>{
     useEffect(()=>{
         if(props.headerData.selectedTab=="campaign"){
             setTitleText('캠페인 관리')
+            onLoadCampaignFirst();
         }else if(props.headerData.selectedTab=="user"){
             setTitleText('사용자 관리')
         }
