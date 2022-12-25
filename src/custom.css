@@ -1,0 +1,183 @@
+.flex{
+    display: flex;
+}
+
+.headerBox{
+    padding: 15px;
+}
+
+.headerBoxSelected{
+    background: #1D6DD2;
+    padding: 15px;
+}
+
+.headerBoxSelectedUser{
+    background: #1D6DD2;
+}
+
+.headerBoxText{
+    color: white;
+}
+
+.headerSelect{
+    width: 150px;
+    border-radius: 8px;
+    margin: 5px 15px;
+    color: #348EFC;
+}
+
+.textAlignLeft{
+    text-align: left;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.textAlignRight{
+    text-align: right;
+}
+
+.alignItemsCenter{
+    align-items: center;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.pd5{
+    padding: 5px;
+}
+
+.mgt25{
+    margin-top: 25px !important;
+}
+
+.mgt10{
+    margin-top: 10px;
+}
+
+.mgt-10{
+    margin-top: -10px;
+}
+
+.mgb-10{
+    margin-bottom: -10px;
+}
+
+.mgl20{
+    margin-left: 20px;
+}
+
+.mgr30{
+    margin-right: 80px;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.borderTop{
+    border-top: 1px solid #DCDCDC;
+}
+
+.colorGray{
+    color: #A6A6A6;
+}
+
+.table-border tr{
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.creatBtn{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.createModalCancel{
+    background-color: #F6F5FA;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 50px;
+}
+
+.createModalCreate{
+    background-color: #2980ED;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 50px;
+}
+
+.col-red{
+    color: red;
+}
+
+.createInputStyle{
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid gray;
+}
+
+.createInputStyleDisabled{
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+
+.task-tooltip {
+    background-color: #eef3fd;
+    border: red solid 1px;
+    border-radius: 5px;
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: -0.25px;
+    margin-top: 6.8px;
+    padding: 5px 11px;
+    position: relative;
+    width: fit-content;
+    z-index: 100;
+}
+
+.task-tooltip::after {
+    border-color: #eef3fd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: -7px;
+    width: 0;
+    z-index: 1;
+}
+
+.task-tooltip::before {
+    border-color: #7689fd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: -8px;
+    width: 0;
+    z-index: 0;
+}

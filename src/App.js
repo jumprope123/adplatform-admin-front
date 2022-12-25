@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './main/header'
+import  Content from './main/content'
+import './custom.css'
+import {useState} from "react";
 
 function App() {
+    const [headerData,setHeaderData] = useState({
+        'selectedTab':'',
+        'selectedOption':''
+    });
+
+    /**
+     * Header에서 조작된 데이터를 받아오는 함수
+     */
+    function getHeaderData(data){
+        setHeaderData(data);
+    }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* 간단한 화면이라 App.js 밑에 바로 Header와 Content를 생성 */}
+      <Header getHeaderData={getHeaderData}/>
+      <Content headerData={headerData}/>
     </div>
   );
 }
